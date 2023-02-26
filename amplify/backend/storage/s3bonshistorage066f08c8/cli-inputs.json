@@ -1,0 +1,16 @@
+{
+  "resourceName": "s3bonshistorage066f08c8",
+  "bucketName": "bonshi-storage-066f08c8",
+  "policyUUID": "04d3a205",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
