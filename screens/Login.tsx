@@ -16,13 +16,16 @@ const DismissKeyboard = ({ children }: { children: React.ReactNode }) => (
   </TouchableWithoutFeedback>
 );
 
+const prodUrl = 'bonsai-api-production.up.railway.app';
+const devUrl = 'http://192.168.86.32:3001';
+
 const Login = () => {
   const [name, setName] = useState('');
   const { setUser } = useContext(BonsaiContext);
 
   const handleSubmit = async () => {
     const request = await axios
-      .post('http://192.168.86.32:3001/login', {
+      .post(process.env.API_URL + '/login', {
         username: name,
       })
       .then(function (response) {

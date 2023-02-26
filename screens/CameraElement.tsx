@@ -98,7 +98,7 @@ export default function CameraElement() {
 
   const imgToDB = async (result: string) => {
     const request = await axios
-      .post('http://192.168.86.32:3001/upload', {
+      .post(process.env.API_URL + '/upload', {
         username: user,
         data: result,
       })
