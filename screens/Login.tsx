@@ -25,14 +25,14 @@ const Login = () => {
       .post(process.env.API_URL + '/login', {
         username: name,
       })
-      .then(function (response) {
+      .then(function(response) {
         let data = response.data;
         if (data.message === name) {
           console.log('going to sign in now');
           setUser(data.message);
         }
       })
-      .catch(function (err) {
+      .catch(function(err) {
         console.log(err);
       });
   };
