@@ -13,6 +13,7 @@ export default function App() {
   const [viewPictures, setViewPictures] = useState(false);
   const [user, setUser] = useState('');
   return (
+    //addign a comment to test
     <BonsaiContext.Provider
       value={{
         viewCamera,
