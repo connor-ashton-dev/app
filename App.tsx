@@ -7,7 +7,7 @@ import CameraElement from './screens/CameraElement';
 import HomeScreen from './screens/HomeScreen';
 import Login from './screens/Login';
 import ViewPictures from './screens/ViewPictures';
-
+//this is random
 export default function App() {
   const [viewCamera, setViewCamera] = useState(false);
   const [viewPictures, setViewPictures] = useState(false);
